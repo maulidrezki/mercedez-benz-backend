@@ -1,2 +1,25 @@
-<h1>Mercedes Benz Code Exercise 🚀</h1>
-<p>Test</p>
+<div class="container my-5">
+  <div class="border-bottom mb-5">
+    <h1>Le Wagon</h1>
+    <h4>Career Week Challenge</h4>
+  </div>
+
+  <%= form_with url: "/", method: :get, class: "row justify-content-center mx-5" do |f| %>
+    <div class="col col-8">
+      <%= f.text_field :lat, label: false, placeholder: "Latitude", class: "form-control" %>
+      <%= f.text_field :lng, label: false, placeholder: "Longitude", class: "form-control" %>
+    </div>
+    <%= f.button 'Search', name: '', class: "col col-4 btn btn-default btn-primary" %>
+  <% end %>
+  <% unless @lat.nil? && @lng.nil? %>
+    <div class="d-flex mt-5">
+    <h3>Searching
+    <strong><%= @lat %></strong>,
+    <strong><%= @lng %></strong>
+    </h3>
+    </div>
+    <% end %>
+    <%= @museums %>
+
+  </div>
+</div>
