@@ -1,24 +1,10 @@
-# README
+Le Wagon Career Week - Day 4
+Entry-level challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Company:** Mercedes-Benz
 
-Things you may want to cover:
+**Time to complete:** ~ 2 hours max
 
-* Ruby version
+**Complexity:** Easy
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Technologies:** API, Routing
