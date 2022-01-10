@@ -59,4 +59,5 @@ gem 'simple_form'
 
 # Adding Geocoder Gemfile
 gem 'geocoder'
+gem 'dotenv-rails'
 
