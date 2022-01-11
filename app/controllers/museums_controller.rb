@@ -11,7 +11,7 @@ class MuseumsController < ApplicationController
     @lng = params[:lng]
     unless (@lat.nil? && @lng.nil?) || !(@lat.to_i.between?(-90, 90) && @lng.to_i.between?(-90, 90))
       query = JSON.parse(URI.open(mapbox_apiurl(@lat, @lng)).read)['features'].map { |f| [f['context'][0]['text'], f['text']] }
-      @museums = query.inject(Hash.new{ |h,k| h[k]=[] }){ |h,(k,v)| h[k] << v; h }
+      @museums = query.inject(Hash.new { |h, k| h[k]=[] }){ |h, (k, v)| h[k] << v; h }
     end
   end
 end
